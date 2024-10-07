@@ -1,0 +1,241 @@
+3 begin 
+input:3 8 
+5 0 1 0 0
+7 3 4
+4 3 6 46 
+4 3 5 36 
+2 3 5 3 
+7 3 7 
+7 4 6 
+4 7 5 11 
+1 4 6 4 
+2 7 5 7 
+3 29 
+7 5 4
+9
+
+begin:7 input temp
+
+start:4 temp three jump 
+4 temp nine hault
+4 temp seven copy
+4 temp one addition
+4 temp two subtraction
+4 temp four equal
+4 temp five lessthan
+4 temp thirtneen multiplication
+4 temp fourteen division
+4 temp six data
+4 temp zero transfer
+8 
+transfer:1 opr two numb
+2 numb one numb 
+1 opr three oprea
+7 numb yx
+7 opr xy
+7 yx:0 xy:0 
+3 tindex
+data:1 opr one a1
+7 a1 x
+1 x:0 three a1
+2 a1 one a1 
+7 a1 y
+6 y
+7 a1 zl
+7 y zl:0
+3 tindex
+jump:1 opr one opr
+7 opr lo
+1 lo:0 input opr
+2 opr one opr
+7 opr love
+7 love:0 temp
+3 start
+copy:1 opr one opr1
+1 opr1 one opr2 
+7 opr1 m 
+1 m:0 input opr1
+2 opr1 one opr1
+7 opr2 j
+1 j:0 input opr2
+2 opr2 one opr2
+7 opr1 copy1
+7 opr2 copy2
+7 copy1:0 copy2:0
+tindex:1 opr input opr
+7 opr res 
+7 res:0 temp 
+3 start
+addition:1 opr one num1
+1 num1 one num2
+1 num2 one num3
+7 num1 p
+7 num2 q 
+7 num3 r
+1 p:0 input num1 
+1 q:0 input num2 
+1 r:0 input num3
+2 num1 one num1
+2 num2 one num2
+2 num3 one num3
+7 num1 add1
+7 num2 add2
+7 num3 add3
+1 add1:0 add2:0 add3:0
+control:1 opr four opr
+7 opr resu 
+7 resu:0 temp 
+3 start
+subtraction:1 opr one nums1
+1 nums1 one nums2
+1 nums2 one nums3
+7 nums1 ps
+7 nums2 qs 
+7 nums3 rs
+1 ps:0 input nums1 
+1 qs:0 input nums2 
+1 rs:0 input nums3
+2 nums1 one nums1
+2 nums2 one nums2
+2 nums3 one nums3
+7 nums1 sub1
+7 nums2 sub2
+7 nums3 sub3
+2 sub1:0 sub2:0 sub3:0
+3 control
+equal:1 opr one eq1
+1 eq1 one eq2
+1 eq2 one eq3
+7 eq1 ie1
+7 eq2 ie2
+7 eq3 ie3
+1 ie1:0 input ie1
+1 ie2:0 input ie2
+1 ie3:0 input ie3
+2 ie1 one ie1
+2 ie2 one ie2
+2 ie3 one ie3
+7 ie1 ei1
+7 ie2 ei2
+7 ie3 ei3
+4 ei1:0 ei2:0 ejump
+3 control
+ejump:7 ie3 opr
+7 ei3:0 temp
+3 start
+lessthan:1 opr one eqs1
+1 eqs1 one eqs2
+1 eqs2 one eqs3
+7 eqs1 ies1
+7 eqs2 ies2
+7 eqs3 ies3
+1 ies1:0 input ies1
+1 ies2:0 input ies2
+1 ies3:0 input ies3
+2 ies1 one ies1
+2 ies2 one ies2
+2 ies3 one ies3
+7 ies1 eis1
+7 ies2 eis2
+7 ies3 eis3
+5 eis1:0 eis2:0 ejumps
+3 control
+ejumps:7 ies3 opr
+7 eis3:0 temp
+3 start
+multiplication:1 opr one mu1
+1 mu1 one mu2
+1 mu2 one mu3
+7 mu1 mul1
+7 mu2 mul2
+7 mu3 mul3
+7 mul1:0 operator1
+7 mul2:0 operator2
+7 mul3:0 operator3
+7 operator1 loo
+7 operator2 loo1
+7 operator3 loo2
+1 loo three loo
+1 loo1 three loo1
+1 loo2 three loo2
+2 loo one loo
+2 loo1 one loo1
+2 loo2 one loo2
+7 loo looo
+7 loo1 looo1
+7 loo2 looo2
+7 looo:0 operator1
+7 looo1:0 operator2
+7 operator1 temporary
+cmul:5 one operator2 mul
+7 operator1 looo2:0
+3 control
+mul:1 operator1 temporary operator1
+2 operator2 one operator2
+3 cmul
+division:1 opr one mus1
+1 mus1 one mus2
+1 mus2 one mus3
+7 mus1 muls1
+7 mus2 muls2
+7 mus3 muls3
+7 muls1:0 operators1
+7 muls2:0 operators2
+7 muls3:0 operators3
+7 operators1 loos
+7 operators2 loos1
+7 operators3 loos2
+1 loos three loos
+1 loos1 three loos1
+1 loos2 three loos2
+2 loos one loos
+2 loos1 one loos1
+2 loos2 one loos2
+7 loos looos
+7 loos1 looos1
+7 loos2 looos2
+7 looos:0 operators1
+7 looos1:0 operators2
+7 operators1 temporarys
+7 zero operators1
+cmuls:5  temporarys operators2 muls
+2 temporarys operators2 temporarys
+1 one operators1 operators1
+3 cmuls
+muls:7 operators1 looos2:0
+3 control
+hault:9
+temp:0
+ three:3 nine:9 opr:input
+one:1 seven:7 opr1:0 opr2:0 four:4 num1:0 num2:0 num3:0
+two:2 nums1:0 nums2:0 nums3:0
+eq1:0 eq2:0 eq3:0 five:5 
+eqs1:0 eqs2:0 eqs3:0
+thirtneen:13
+mu1:0
+mu2:0
+mu3:0
+operator1:0
+operator2:0
+operator3:0
+loo:0
+temporary:0
+loo1:0
+loo2:0
+zero:0
+mus1:0
+mus2:0
+mus3:0
+operators1:0
+operators2:0
+operators3:0
+loos:0
+temporarys:0
+loos1:0
+loos2:0
+fourteen:14
+six:6
+y:0
+numb:0
+oprea:0
+a1:0
