@@ -1,0 +1,21 @@
+3 5 number:121 result:0 
+7 number rem
+5 ten rem jump1 
+1 temp rem temp 
+1 result rem result 
+7 result temp 
+4 zero rem 68
+5 zero nine jump2
+7 quotient rem
+7 stop nine 
+7 zero temp
+7 zero quotient
+3 8
+jump1:2 rem ten rem
+1 quotient one quotient
+3 8
+jump2:1 result temp result
+2 nine one nine 
+3 23
+rem:0 quotient:0
+nine:9 stop:9 temp:0 zero:0 ten:10 one:1
