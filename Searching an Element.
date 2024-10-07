@@ -1,0 +1,11 @@
+3 7 e1 length:6 target:2 result:0 
+5 length one jump
+4 target firstele:e1 jump2
+2 length one length
+1 firstele one firstele
+3 7
+jump:9
+jump2:1 result one result
+9
+e1:3 e2:4 e3:6 e4:7 e5:2
+one:1
